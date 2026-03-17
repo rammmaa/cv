@@ -1,8 +1,9 @@
 %------------------------
 % Resume — Haram Lee
+% Based on template by Anubhav Singh
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,20pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -54,13 +55,6 @@
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeProject}[2]{
-  \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textit{#2} \\
-    \end{tabular*}\vspace{-5pt}
-}
-
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
 
 \renewcommand{\labelitemii}{$\bullet$}
@@ -94,53 +88,52 @@
   \resumeSubHeadingListEnd
 
 \vspace{-5pt}
-\section{Skills}
+\section{Skills Summary}
   \resumeSubHeadingListStart
     \resumeSubItem{Technical Skills}{Python, Java, TypeScript, SQL, Kafka, Flink, Spark, Docker, ROS 2, Hugo}
-    \resumeSubItem{Interests}{Full-stack, MLOps \& LLM Serving, Distributed Systems, Robotics (ROS 2), Korean NLP}
     \resumeSubItem{Languages}{Korean (native), English (working proficiency)}
   \resumeSubHeadingListEnd
 
 \vspace{-5pt}
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeProject{dairuri}{Mar. 2026 -- Present}
+    \item \textbf{dairuri} \hfill \textit{Mar. 2026 -- Present}\vspace{-5pt}
       \resumeItemListStart
-        \item\small{26-1 Tech for Impact project. \vspace{-2pt}}
+        \item\small{Tech for Impact social innovation project (Spring 2026). \vspace{-2pt}}
       \resumeItemListEnd
-    \resumeProject{compose-coffee}{Jan. 2026 -- Mar. 2026}
+    \item \textbf{compose-coffee} \hfill \textit{Jan. 2026 -- Mar. 2026}\vspace{-5pt}
       \resumeItemListStart
-        \item\small{25W YBIGTA $\times$ Compose industry-academia collaboration project. \vspace{-2pt}}
+        \item\small{YBIGTA $\times$ Compose industry-academia collaboration project (Winter 2025). \vspace{-2pt}}
       \resumeItemListEnd
-    \resumeProject{de-winter-project \textnormal{\href{https://github.com/YBIGTA/27th-DE-WinterProject}{[Link]}}}{Jan. 2026 -- Mar. 2026}
+    \item \textbf{de-winter-project} \href{https://github.com/YBIGTA/27th-DE-WinterProject}{[Link]} \hfill \textit{Jan. 2026 -- Mar. 2026}\vspace{-5pt}
       \resumeItemListStart
-        \item\small{25W YBIGTA Data Engineering team winter project. \vspace{-2pt}}
+        \item\small{YBIGTA Data Engineering team winter project (Winter 2025). \vspace{-2pt}}
         \item\small{Built a reliable, scalable, fault-tolerant data pipeline simulating Uber ride data using Kafka and Flink. \vspace{-2pt}}
       \resumeItemListEnd
-    \resumeProject{robo-404 \textnormal{\href{https://github.com/YBIGTA/27th-conference-robo404}{[Link]}}}{Sep. 2025 -- Mar. 2026}
+    \item \textbf{robo-404} \href{https://github.com/YBIGTA/27th-conference-robo404}{[Link]} \hfill \textit{Sep. 2025 -- Mar. 2026}\vspace{-5pt}
       \resumeItemListStart
         \item\small{AI-powered hazard detection robot system using ROS 2 and YOLO. \vspace{-2pt}}
       \resumeItemListEnd
-    \resumeProject{rc-creative-platform}{Mar. 2024 -- Dec. 2024}
+    \item \textbf{rc-creative-platform} \hfill \textit{Mar. 2024 -- Dec. 2024}\vspace{-5pt}
       \resumeItemListStart
         \item\small{Yonsei-Nexon $\sqrt{i}$ RC Creative Platform. \vspace{-2pt}}
         \item\small{Developed a conversational AI app for elderly users. \vspace{-2pt}}
       \resumeItemListEnd
-    \resumeProject{ihei-workstation}{Sep. 2024 -- Dec. 2024}
+    \item \textbf{ihei-workstation} \hfill \textit{Sep. 2024 -- Dec. 2024}\vspace{-5pt}
       \resumeItemListStart
         \item\small{IHEI Social Innovation Workstation. \vspace{-2pt}}
-        \item\small{Team leader of project \textit{든든}, team member of project \textit{펴다잇다}. \vspace{-2pt}}
+        \item\small{Led project Deundeun as team leader; participated in project Pyeodaitda as team member. \vspace{-2pt}}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 \vspace{-5pt}
 \section{Honors and Awards}
 \begin{description}[font=$\bullet$]
-  \item {RC하우스 우수 프로그램 공모전 수상 \hfill Dec. 2025}
+  \item {RC House Outstanding Program Award \hfill Dec. 2025}
   \vspace{-5pt}
-  \item {장려상, \textbf{Upstage LLM Query Hackathon}, team $\langle$22:34$\rangle$ \hfill Nov. 2025}
+  \item {Encouragement Prize, \textbf{Upstage LLM Query Hackathon}, team $\langle$22:34$\rangle$ \hfill Nov. 2025}
   \vspace{-5pt}
-  \item {최우수상, \textbf{RC 포트폴리오 공모전} \hfill Jul. 2024}
+  \item {Grand Prize, \textbf{RC Portfolio Competition} \hfill Jul. 2024}
 \end{description}
 
 \vspace{-5pt}
@@ -169,7 +162,7 @@
       {Yonsei International Campus, Muak House}{Mar. 2025 -- Dec. 2025}
     \resumeSubheading
       {CS Student Council}{}
-      {Executive, 하랑 · 새결}{Apr. 2024 -- Dec. 2025}
+      {Executive}{Apr. 2024 -- Dec. 2025}
       \resumeItemListStart
         \item\small{Yonsei University Computer Science Department Student Council. \vspace{-2pt}}
       \resumeItemListEnd
