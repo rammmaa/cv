@@ -1,0 +1,32 @@
+name: Build CV PDF
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compile LaTeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: cv.tex
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cv
+          path: cv.pdf
+
+      - name: Release PDF
+        uses: softprops/action-gh-release@v2
+        if: github.ref == 'refs/heads/main'
+        with:
+          tag_name: latest
+          files: cv.pdf
+          body: "Auto-built CV PDF"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
