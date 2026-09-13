@@ -9,7 +9,9 @@
 \usepackage{titlesec}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+\definecolor{LinkBlue}{rgb}{0.08,0.25,0.45}
+\usepackage[colorlinks=true,urlcolor=LinkBlue,linkcolor=LinkBlue]{hyperref}
+\usepackage{tabularx}
 \usepackage{fancyhdr}
 
 \pagestyle{fancy}
@@ -34,10 +36,10 @@
 
 \newcommand{\resumeSubheading}[4]{
   \item
-    \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabularx}{0.98\textwidth}{@{}>{\raggedright\arraybackslash}X >{\raggedleft\arraybackslash}p{0.40\textwidth}@{}}
       \textbf{#1} & #2 \\
       \textit{#3} & \textit{#4} \\
-    \end{tabular*}\vspace{-6pt}
+    \end{tabularx}\vspace{-6pt}
 }
 
 \newcommand{\resumeEducation}[4]{
@@ -64,7 +66,7 @@
 \section{Education}
 \resumeSubHeadingListStart
   \resumeEducation
-    {Yonsei University}{Seoul, South Korea}
+    {\href{https://www.yonsei.ac.kr/en_sc/index.do}{Yonsei University}}{Seoul, South Korea}
     {B.S. in Computer Science and Engineering; Double Major in Korean Language \& Literature}
     {Mar. 2024 -- Feb. 2029 (Expected)}
 \resumeSubHeadingListEnd
@@ -72,19 +74,19 @@
 \section{Experience}
 \resumeSubHeadingListStart
   \resumeSubheading
-    {Daangn}{Seoul, South Korea}
+    {\href{https://www.karrotmarket.com/about/}{Karrot}}{Seoul, South Korea}
     {Software Engineer Intern, Data}{Jun. 2026 -- Present}
     \resumeItemListStart
       \item\small{Develop and improve production data-transfer pipelines using Airflow, Spark, MongoDB, BigQuery, AWS, GCP, and Kubernetes, focusing on schema handling, testing, deployment, and reliability.}
     \resumeItemListEnd
   \resumeSubheading
-    {Osstem Implant}{Seoul, South Korea}
-    {AI Education Instructor}{Mar. 2026 -- May 2026}
+    {\href{https://en.osstem.com/company/company-outline}{Osstem Implant}}{Seoul, South Korea}
+    {AI Consultant}{Mar. 2026 -- May 2026}
     \resumeItemListStart
-      \item\small{Deliver an AI training program for a cohort of 12 employees.}
+      \item\small{Delivered an AI training program for a cohort of 12 employees.}
     \resumeItemListEnd
   \resumeSubheading
-    {BrainConnect}{Remote}
+    {\href{https://brainconnect.ai/en}{BrainConnect}}{Remote}
     {Software Engineer}{Apr. 2026 -- May 2026}
 \resumeSubHeadingListEnd
 
@@ -94,15 +96,15 @@
     \resumeItemListStart
       \item\small{Built a React/Electron analytics dashboard over approximately 400 million normalized POS and delivery-platform records using DuckDB and Parquet.}
     \resumeItemListEnd
-  \item \textbf{Real-Time Ride Data Pipeline} \href{https://github.com/YBIGTA/27th-DE-WinterProject}{[Link]} \hfill \textit{Jan.--Mar. 2026}
+  \item \textbf{\href{https://github.com/YBIGTA/27th-DE-WinterProject}{Real-Time Ride Data Pipeline}} \hfill \textit{Jan.--Mar. 2026}
     \resumeItemListStart
       \item\small{Built an observable Kafka--Flink--ClickHouse pipeline and tuned ingestor buffering to eliminate HTTP 429 responses and dropped events.}
     \resumeItemListEnd
-  \item \textbf{Dairuri: Darolink Community Platform} \href{https://github.com/rammmaa/dairuri}{[Link]} \hfill \textit{Mar.--Jun. 2026}
+  \item \textbf{\href{https://github.com/rammmaa/dairuri}{Dairuri: Darolink Community Platform}} \hfill \textit{Mar.--Jun. 2026}
     \resumeItemListStart
       \item\small{Built a React Native/TypeScript app and Node.js API for a rural community service using AWS EC2, PostgreSQL, Redis, and Naver Maps.}
     \resumeItemListEnd
-  \item \textbf{ROBO-404: AI Hazard Detection Robot} \href{https://github.com/YBIGTA/27th-conference-robo404}{[Link]} \hfill \textit{Sep. 2025--Jun. 2026}
+  \item \textbf{\href{https://github.com/YBIGTA/27th-conference-robo404}{ROBO-404: AI Hazard Detection Robot}} \hfill \textit{Sep. 2025--Jun. 2026}
     \resumeItemListStart
       \item\small{Built a ROS 2/Gazebo/Nav2 simulation and edge pipeline linking camera images with odometry logs, with Docker GPU and YOLO training workflows.}
     \resumeItemListEnd
@@ -120,9 +122,9 @@
 \small{
 \textbf{Awards}: RC House Outstanding Program Award (2025); Upstage LLM Query Hackathon, Encouragement Prize (2025); RC Portfolio Competition, Grand Prize (2024) \\
 \textbf{Scholarships}: KC Future Scholarship Foundation (Feb. 2026 -- Present); Donam Scholarship Foundation (Mar. 2025 -- Present) \\
-\textbf{YBIGTA}: Data Engineering Team Member, 27th Cohort; Executive Board Member, 28th Cohort (Jun. 2025 -- Present) \\
-\textbf{Molgorithm}: Executive, Yonsei Algorithm Problem Solving Club (Mar. 2025 -- Present) \\
-\textbf{ICPC Sinchon}: Staff, Spring 2025; President, Winter 2026 (Apr. 2025 -- Feb. 2026)
+\textbf{\href{https://github.com/YBIGTA}{YBIGTA}}: Data Engineering Team Member, 27th Cohort; Executive Board Member, 28th Cohort (Jun. 2025 -- Present) \\
+\textbf{\href{https://github.com/yonsei-molgorithm}{Molgorithm}}: Executive, Yonsei Algorithm Problem Solving Club (Mar. 2025 -- Present) \\
+\textbf{\href{https://github.com/icpc-sinchon}{ICPC Sinchon}}: Staff, Spring 2025; President, Winter 2026 (Apr. 2025 -- Feb. 2026)
 }
 
 \end{document}
